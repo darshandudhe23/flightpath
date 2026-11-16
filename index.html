@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlightPath — Intelligent Flight Path Optimizer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231d4ed8'/%3E%3Cpath fill='white' d='M18 15v-1.5l-5.5-3.5V6a1 1 0 0 0-2 0v4L5 13.5V15l5.5-1.7V16l-1.3 1v1l2.3-.7 2.3.7v-1L12.5 16v-2.7z'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script>
+  // Apply the saved theme before first paint to avoid a flash.
+  try { var t = localStorage.getItem('fp_theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></span>
+    <div><h1>FlightPath</h1><p>Intelligent Flight Path Optimizer</p></div>
+  </div>
+  <div class="top-right">
+    <span class="pill" id="net-stats" hidden></span>
+    <button id="theme" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+  </div>
+</header>
+
+<main>
+  <aside class="panel">
+    <section class="card">
+      <h2>Plan a route</h2>
+
+      <div class="fields">
+        <div class="field"><span class="dot from"></span>
+          <input id="src" placeholder="From — city, airport or code" autocomplete="off" spellcheck="false" aria-label="From">
+        </div>
+        <button id="swap" class="swap" type="button" aria-label="Swap origin and destination" title="Swap">⇅</button>
+        <div class="field"><span class="dot to"></span>
+          <input id="dst" placeholder="To — city, airport or code" autocomplete="off" spellcheck="false" aria-label="To">
+        </div>
+      </div>
+
+      <div class="label">Optimize for</div>
+      <div class="seg" id="criterion" role="group" aria-label="Optimize for">
+        <button class="active" data-v="distance" type="button"><i>↔</i>Distance</button>
+        <button data-v="cost" type="button"><i>₹</i>Cost</button>
+        <button data-v="time" type="button"><i>◷</i>Time</button>
+      </div>
+
+      <details class="adv" id="adv">
+        <summary>Advanced options <span id="adv-badge" class="count" hidden></span></summary>
+        <div class="adv-body">
+          <label class="row">
+            <span>Layover per connection <output id="layover-out">0 min</output></span>
+            <input id="layover" type="range" min="0" max="240" step="15" value="0">
+          </label>
+          <label class="row">
+            <span>Maximum stops</span>
+            <select id="max-stops">
+              <option value="">Any number</option>
+              <option value="0">Non-stop only</option>
+              <option value="1">Up to 1 stop</option>
+              <option value="2">Up to 2 stops</option>
+            </select>
+          </label>
+          <div class="row">
+            <span>Avoid airports</span>
+            <div class="chips" id="avoid-chips"></div>
+            <div class="field slim"><input id="avoid-in" placeholder="Add an airport to avoid…" autocomplete="off" spellcheck="false" aria-label="Avoid airport"></div>
+          </div>
+        </div>
+      </details>
+
+      <button id="go" class="primary" type="button">Find best routes</button>
+      <div id="msg" class="msg" role="alert" hidden></div>
+
+      <div id="recent" class="recent" hidden>
+        <div class="label" id="recent-label">Recent</div>
+        <div class="chips" id="recent-chips"></div>
+      </div>
+    </section>
+
+    <section class="card" id="results" hidden>
+      <div class="res-head">
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="routes" role="tab" type="button">Routes</button>
+          <button class="tab" data-tab="compare" role="tab" type="button">Compare</button>
+        </div>
+        <div class="acts">
+          <button id="copy-link" class="ghost sm" type="button" title="Copy a shareable link">🔗 Share</button>
+          <button id="copy-trip" class="ghost sm" type="button" title="Copy selected itinerary as text">📋 Copy</button>
+        </div>
+      </div>
+
+      <div id="tab-routes">
+        <p id="explain" class="muted"></p>
+        <div id="route-list"></div>
+      </div>
+      <div id="tab-compare" hidden>
+        <p class="muted">The best route under each goal. Green marks the best value in each column. Tap a row to view it on the map.</p>
+        <div id="compare-list"></div>
+      </div>
+      <p class="note">Costs and times are illustrative estimates, not live fares or schedules.</p>
+    </section>
+
+    <section class="card hint" id="hint">
+      <h2>Explore the network</h2>
+      <p class="muted">Click any airport on the map to set it as your origin or destination, or to highlight every airport reachable from it.</p>
+    </section>
+  </aside>
+
+  <section class="stage">
+    <div id="map"></div>
+    <div class="toolbar">
+      <label class="tgl"><input type="checkbox" id="t-net" checked> Network</label>
+      <label class="tgl"><input type="checkbox" id="t-anim" checked> Animate ✈</label>
+    </div>
+    <div id="map-note" class="map-note" hidden><span id="map-note-text"></span><button id="map-note-x" type="button" aria-label="Clear highlight">×</button></div>
+    <div class="legend">
+      <span><i class="sw best"></i>Selected route</span>
+      <span><i class="sw alt"></i>Alternative</span>
+      <span><i class="sw net"></i>Network</span>
+      <span id="tile-warn" hidden>⚠ Map tiles unavailable — routes still shown</span>
+    </div>
+  </section>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

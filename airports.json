@@ -1,0 +1,202 @@
+[
+ {
+  "code": "DEL",
+  "name": "Indira Gandhi International",
+  "city": "Delhi",
+  "country": "India",
+  "lat": 28.5562,
+  "lon": 77.1
+ },
+ {
+  "code": "BOM",
+  "name": "Chhatrapati Shivaji Maharaj International",
+  "city": "Mumbai",
+  "country": "India",
+  "lat": 19.0896,
+  "lon": 72.8656
+ },
+ {
+  "code": "BLR",
+  "name": "Kempegowda International",
+  "city": "Bengaluru",
+  "country": "India",
+  "lat": 13.1986,
+  "lon": 77.7066
+ },
+ {
+  "code": "MAA",
+  "name": "Chennai International",
+  "city": "Chennai",
+  "country": "India",
+  "lat": 12.9941,
+  "lon": 80.1709
+ },
+ {
+  "code": "CCU",
+  "name": "Netaji Subhas Chandra Bose International",
+  "city": "Kolkata",
+  "country": "India",
+  "lat": 22.6547,
+  "lon": 88.4467
+ },
+ {
+  "code": "HYD",
+  "name": "Rajiv Gandhi International",
+  "city": "Hyderabad",
+  "country": "India",
+  "lat": 17.2403,
+  "lon": 78.4294
+ },
+ {
+  "code": "PNQ",
+  "name": "Pune International",
+  "city": "Pune",
+  "country": "India",
+  "lat": 18.5821,
+  "lon": 73.9197
+ },
+ {
+  "code": "AMD",
+  "name": "Sardar Vallabhbhai Patel International",
+  "city": "Ahmedabad",
+  "country": "India",
+  "lat": 23.0772,
+  "lon": 72.6347
+ },
+ {
+  "code": "GOI",
+  "name": "Dabolim",
+  "city": "Goa",
+  "country": "India",
+  "lat": 15.3808,
+  "lon": 73.8314
+ },
+ {
+  "code": "COK",
+  "name": "Cochin International",
+  "city": "Kochi",
+  "country": "India",
+  "lat": 10.152,
+  "lon": 76.4019
+ },
+ {
+  "code": "TRV",
+  "name": "Trivandrum International",
+  "city": "Thiruvananthapuram",
+  "country": "India",
+  "lat": 8.4821,
+  "lon": 76.9201
+ },
+ {
+  "code": "JAI",
+  "name": "Jaipur International",
+  "city": "Jaipur",
+  "country": "India",
+  "lat": 26.8242,
+  "lon": 75.8122
+ },
+ {
+  "code": "LKO",
+  "name": "Chaudhary Charan Singh International",
+  "city": "Lucknow",
+  "country": "India",
+  "lat": 26.7606,
+  "lon": 80.8893
+ },
+ {
+  "code": "GAU",
+  "name": "Lokpriya Gopinath Bordoloi International",
+  "city": "Guwahati",
+  "country": "India",
+  "lat": 26.1061,
+  "lon": 91.5859
+ },
+ {
+  "code": "IXC",
+  "name": "Chandigarh International",
+  "city": "Chandigarh",
+  "country": "India",
+  "lat": 30.6735,
+  "lon": 76.7885
+ },
+ {
+  "code": "PAT",
+  "name": "Jay Prakash Narayan International",
+  "city": "Patna",
+  "country": "India",
+  "lat": 25.5913,
+  "lon": 85.088
+ },
+ {
+  "code": "BBI",
+  "name": "Biju Patnaik International",
+  "city": "Bhubaneswar",
+  "country": "India",
+  "lat": 20.2444,
+  "lon": 85.8178
+ },
+ {
+  "code": "NAG",
+  "name": "Dr. Babasaheb Ambedkar International",
+  "city": "Nagpur",
+  "country": "India",
+  "lat": 21.0922,
+  "lon": 79.0472
+ },
+ {
+  "code": "IDR",
+  "name": "Devi Ahilya Bai Holkar",
+  "city": "Indore",
+  "country": "India",
+  "lat": 22.7218,
+  "lon": 75.8011
+ },
+ {
+  "code": "SXR",
+  "name": "Sheikh ul-Alam International",
+  "city": "Srinagar",
+  "country": "India",
+  "lat": 33.9871,
+  "lon": 74.7742
+ },
+ {
+  "code": "DXB",
+  "name": "Dubai International",
+  "city": "Dubai",
+  "country": "UAE",
+  "lat": 25.2532,
+  "lon": 55.3657
+ },
+ {
+  "code": "SIN",
+  "name": "Changi",
+  "city": "Singapore",
+  "country": "Singapore",
+  "lat": 1.3644,
+  "lon": 103.9915
+ },
+ {
+  "code": "LHR",
+  "name": "Heathrow",
+  "city": "London",
+  "country": "United Kingdom",
+  "lat": 51.47,
+  "lon": -0.4543
+ },
+ {
+  "code": "BKK",
+  "name": "Suvarnabhumi",
+  "city": "Bangkok",
+  "country": "Thailand",
+  "lat": 13.69,
+  "lon": 100.7501
+ },
+ {
+  "code": "KUL",
+  "name": "Kuala Lumpur International",
+  "city": "Kuala Lumpur",
+  "country": "Malaysia",
+  "lat": 2.7456,
+  "lon": 101.7099
+ }
+]

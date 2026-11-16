@@ -1,0 +1,634 @@
+[
+ {
+  "from": "DEL",
+  "to": "BOM",
+  "distance_km": 1137,
+  "time_min": 143,
+  "cost_inr": 7640,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "BLR",
+  "distance_km": 1709,
+  "time_min": 168,
+  "cost_inr": 10180,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "MAA",
+  "distance_km": 1759,
+  "time_min": 174,
+  "cost_inr": 11000,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "CCU",
+  "distance_km": 1312,
+  "time_min": 146,
+  "cost_inr": 7090,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "HYD",
+  "distance_km": 1266,
+  "time_min": 136,
+  "cost_inr": 8200,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "JAI",
+  "distance_km": 231,
+  "time_min": 75,
+  "cost_inr": 3120,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "LKO",
+  "distance_km": 423,
+  "time_min": 72,
+  "cost_inr": 3340,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "AMD",
+  "distance_km": 755,
+  "time_min": 104,
+  "cost_inr": 6080,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "IXC",
+  "distance_km": 237,
+  "time_min": 69,
+  "cost_inr": 2720,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "SXR",
+  "distance_km": 643,
+  "time_min": 101,
+  "cost_inr": 5190,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "PAT",
+  "distance_km": 857,
+  "time_min": 107,
+  "cost_inr": 5840,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "GOI",
+  "distance_km": 1503,
+  "time_min": 170,
+  "cost_inr": 7110,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "NAG",
+  "distance_km": 853,
+  "time_min": 116,
+  "cost_inr": 5450,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "DXB",
+  "distance_km": 2183,
+  "time_min": 214,
+  "cost_inr": 17760,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "LHR",
+  "distance_km": 6731,
+  "time_min": 554,
+  "cost_inr": 34710,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "SIN",
+  "distance_km": 4157,
+  "time_min": 355,
+  "cost_inr": 22270,
+  "bidirectional": true
+ },
+ {
+  "from": "DEL",
+  "to": "BKK",
+  "distance_km": 2948,
+  "time_min": 280,
+  "cost_inr": 24930,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "BLR",
+  "distance_km": 834,
+  "time_min": 108,
+  "cost_inr": 6140,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "MAA",
+  "distance_km": 1033,
+  "time_min": 120,
+  "cost_inr": 6370,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "HYD",
+  "distance_km": 623,
+  "time_min": 91,
+  "cost_inr": 4320,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "PNQ",
+  "distance_km": 124,
+  "time_min": 50,
+  "cost_inr": 2260,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "GOI",
+  "distance_km": 425,
+  "time_min": 75,
+  "cost_inr": 4280,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "AMD",
+  "distance_km": 444,
+  "time_min": 74,
+  "cost_inr": 3750,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "COK",
+  "distance_km": 1064,
+  "time_min": 124,
+  "cost_inr": 7040,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "CCU",
+  "distance_km": 1666,
+  "time_min": 175,
+  "cost_inr": 10370,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "JAI",
+  "distance_km": 911,
+  "time_min": 124,
+  "cost_inr": 6800,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "IDR",
+  "distance_km": 506,
+  "time_min": 74,
+  "cost_inr": 3700,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "NAG",
+  "distance_km": 683,
+  "time_min": 90,
+  "cost_inr": 5170,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "DXB",
+  "distance_km": 1926,
+  "time_min": 203,
+  "cost_inr": 13220,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "LHR",
+  "distance_km": 7212,
+  "time_min": 597,
+  "cost_inr": 47020,
+  "bidirectional": true
+ },
+ {
+  "from": "BOM",
+  "to": "SIN",
+  "distance_km": 3921,
+  "time_min": 333,
+  "cost_inr": 25430,
+  "bidirectional": true
+ },
+ {
+  "from": "BLR",
+  "to": "MAA",
+  "distance_km": 268,
+  "time_min": 71,
+  "cost_inr": 3010,
+  "bidirectional": true
+ },
+ {
+  "from": "BLR",
+  "to": "HYD",
+  "distance_km": 456,
+  "time_min": 77,
+  "cost_inr": 3900,
+  "bidirectional": true
+ },
+ {
+  "from": "BLR",
+  "to": "COK",
+  "distance_km": 367,
+  "time_min": 70,
+  "cost_inr": 3770,
+  "bidirectional": true
+ },
+ {
+  "from": "BLR",
+  "to": "GOI",
+  "distance_km": 483,
+  "time_min": 89,
+  "cost_inr": 3920,
+  "bidirectional": true
+ },
+ {
+  "from": "BLR",
+  "to": "PNQ",
+  "distance_km": 723,
+  "time_min": 104,
+  "cost_inr": 4350,
+  "bidirectional": true
+ },
+ {
+  "from": "BLR",
+  "to": "TRV",
+  "distance_km": 531,
+  "time_min": 99,
+  "cost_inr": 3770,
+  "bidirectional": true
+ },
+ {
+  "from": "BLR",
+  "to": "BBI",
+  "distance_km": 1166,
+  "time_min": 141,
+  "cost_inr": 6030,
+  "bidirectional": true
+ },
+ {
+  "from": "BLR",
+  "to": "DXB",
+  "distance_km": 2695,
+  "time_min": 239,
+  "cost_inr": 17020,
+  "bidirectional": true
+ },
+ {
+  "from": "BLR",
+  "to": "SIN",
+  "distance_km": 3179,
+  "time_min": 280,
+  "cost_inr": 23530,
+  "bidirectional": true
+ },
+ {
+  "from": "MAA",
+  "to": "CCU",
+  "distance_km": 1385,
+  "time_min": 163,
+  "cost_inr": 8060,
+  "bidirectional": true
+ },
+ {
+  "from": "MAA",
+  "to": "COK",
+  "distance_km": 518,
+  "time_min": 84,
+  "cost_inr": 4810,
+  "bidirectional": true
+ },
+ {
+  "from": "MAA",
+  "to": "HYD",
+  "distance_km": 508,
+  "time_min": 77,
+  "cost_inr": 4390,
+  "bidirectional": true
+ },
+ {
+  "from": "MAA",
+  "to": "TRV",
+  "distance_km": 615,
+  "time_min": 87,
+  "cost_inr": 4950,
+  "bidirectional": true
+ },
+ {
+  "from": "MAA",
+  "to": "SIN",
+  "distance_km": 2924,
+  "time_min": 270,
+  "cost_inr": 21870,
+  "bidirectional": true
+ },
+ {
+  "from": "MAA",
+  "to": "KUL",
+  "distance_km": 2629,
+  "time_min": 254,
+  "cost_inr": 16460,
+  "bidirectional": true
+ },
+ {
+  "from": "CCU",
+  "to": "GAU",
+  "distance_km": 498,
+  "time_min": 87,
+  "cost_inr": 3640,
+  "bidirectional": true
+ },
+ {
+  "from": "CCU",
+  "to": "BBI",
+  "distance_km": 382,
+  "time_min": 74,
+  "cost_inr": 3660,
+  "bidirectional": true
+ },
+ {
+  "from": "CCU",
+  "to": "PAT",
+  "distance_km": 472,
+  "time_min": 80,
+  "cost_inr": 3940,
+  "bidirectional": true
+ },
+ {
+  "from": "CCU",
+  "to": "HYD",
+  "distance_km": 1207,
+  "time_min": 127,
+  "cost_inr": 6200,
+  "bidirectional": true
+ },
+ {
+  "from": "CCU",
+  "to": "LKO",
+  "distance_km": 889,
+  "time_min": 106,
+  "cost_inr": 6590,
+  "bidirectional": true
+ },
+ {
+  "from": "CCU",
+  "to": "BKK",
+  "distance_km": 1636,
+  "time_min": 182,
+  "cost_inr": 12660,
+  "bidirectional": true
+ },
+ {
+  "from": "CCU",
+  "to": "SIN",
+  "distance_km": 2903,
+  "time_min": 260,
+  "cost_inr": 19170,
+  "bidirectional": true
+ },
+ {
+  "from": "HYD",
+  "to": "NAG",
+  "distance_km": 433,
+  "time_min": 72,
+  "cost_inr": 4370,
+  "bidirectional": true
+ },
+ {
+  "from": "HYD",
+  "to": "BBI",
+  "distance_km": 847,
+  "time_min": 103,
+  "cost_inr": 5040,
+  "bidirectional": true
+ },
+ {
+  "from": "HYD",
+  "to": "GOI",
+  "distance_km": 532,
+  "time_min": 90,
+  "cost_inr": 3680,
+  "bidirectional": true
+ },
+ {
+  "from": "HYD",
+  "to": "DXB",
+  "distance_km": 2546,
+  "time_min": 235,
+  "cost_inr": 16700,
+  "bidirectional": true
+ },
+ {
+  "from": "HYD",
+  "to": "PNQ",
+  "distance_km": 500,
+  "time_min": 78,
+  "cost_inr": 4060,
+  "bidirectional": true
+ },
+ {
+  "from": "COK",
+  "to": "DXB",
+  "distance_km": 2782,
+  "time_min": 254,
+  "cost_inr": 20540,
+  "bidirectional": true
+ },
+ {
+  "from": "COK",
+  "to": "TRV",
+  "distance_km": 194,
+  "time_min": 67,
+  "cost_inr": 2800,
+  "bidirectional": true
+ },
+ {
+  "from": "COK",
+  "to": "GOI",
+  "distance_km": 645,
+  "time_min": 100,
+  "cost_inr": 5130,
+  "bidirectional": true
+ },
+ {
+  "from": "AMD",
+  "to": "JAI",
+  "distance_km": 526,
+  "time_min": 77,
+  "cost_inr": 4070,
+  "bidirectional": true
+ },
+ {
+  "from": "AMD",
+  "to": "IDR",
+  "distance_km": 327,
+  "time_min": 70,
+  "cost_inr": 3590,
+  "bidirectional": true
+ },
+ {
+  "from": "AMD",
+  "to": "PNQ",
+  "distance_km": 517,
+  "time_min": 78,
+  "cost_inr": 4160,
+  "bidirectional": true
+ },
+ {
+  "from": "AMD",
+  "to": "DXB",
+  "distance_km": 1767,
+  "time_min": 168,
+  "cost_inr": 16030,
+  "bidirectional": true
+ },
+ {
+  "from": "JAI",
+  "to": "IXC",
+  "distance_km": 438,
+  "time_min": 92,
+  "cost_inr": 4340,
+  "bidirectional": true
+ },
+ {
+  "from": "LKO",
+  "to": "PAT",
+  "distance_km": 439,
+  "time_min": 70,
+  "cost_inr": 3850,
+  "bidirectional": true
+ },
+ {
+  "from": "NAG",
+  "to": "IDR",
+  "distance_km": 381,
+  "time_min": 72,
+  "cost_inr": 3590,
+  "bidirectional": true
+ },
+ {
+  "from": "IXC",
+  "to": "SXR",
+  "distance_km": 414,
+  "time_min": 81,
+  "cost_inr": 3800,
+  "bidirectional": true
+ },
+ {
+  "from": "PNQ",
+  "to": "GOI",
+  "distance_km": 356,
+  "time_min": 65,
+  "cost_inr": 3220,
+  "bidirectional": true
+ },
+ {
+  "from": "DXB",
+  "to": "LHR",
+  "distance_km": 5497,
+  "time_min": 450,
+  "cost_inr": 31350,
+  "bidirectional": true
+ },
+ {
+  "from": "DXB",
+  "to": "SIN",
+  "distance_km": 5845,
+  "time_min": 479,
+  "cost_inr": 30520,
+  "bidirectional": true
+ },
+ {
+  "from": "DXB",
+  "to": "BKK",
+  "distance_km": 4904,
+  "time_min": 421,
+  "cost_inr": 31060,
+  "bidirectional": true
+ },
+ {
+  "from": "SIN",
+  "to": "KUL",
+  "distance_km": 296,
+  "time_min": 76,
+  "cost_inr": 6490,
+  "bidirectional": true
+ },
+ {
+  "from": "SIN",
+  "to": "BKK",
+  "distance_km": 1416,
+  "time_min": 153,
+  "cost_inr": 11380,
+  "bidirectional": true
+ },
+ {
+  "from": "SIN",
+  "to": "LHR",
+  "distance_km": 10881,
+  "time_min": 874,
+  "cost_inr": 71860,
+  "bidirectional": true
+ },
+ {
+  "from": "KUL",
+  "to": "BKK",
+  "distance_km": 1222,
+  "time_min": 147,
+  "cost_inr": 9760,
+  "bidirectional": true
+ },
+ {
+  "from": "KUL",
+  "to": "DXB",
+  "distance_km": 5549,
+  "time_min": 470,
+  "cost_inr": 32900,
+  "bidirectional": true
+ },
+ {
+  "from": "GAU",
+  "to": "BKK",
+  "distance_km": 1679,
+  "time_min": 164,
+  "cost_inr": 15620,
+  "bidirectional": false
+ }
+]
